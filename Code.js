@@ -1,13 +1,6 @@
-const fs = require('fs')
-const customer = require('./newCustomer.json')
-let curcus = customer.coins
-customer.coins = curcus + 10
-console.log(customer.coins)
+const writeToFile = require("write-to-file");
+const dash = require('./db.json')
+const curnum = dash.dash.dhess
+dash.dash.dhess = curnum + 100
 
-fs.writeFile('./newCustomer.json', JSON.stringify(customer, null, 2), err => {
-    if (err) {
-        console.log('Error writing file', err)
-    } else {
-        console.log('Successfully wrote file')
-    }
-})
+writeToFile("db.json", JSON.stringify(dash , 4))
