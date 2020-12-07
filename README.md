@@ -1,2 +1,2 @@
 # Testing
-This repository is only for testing purpose.
+Testing some stupid things that do not work in github
